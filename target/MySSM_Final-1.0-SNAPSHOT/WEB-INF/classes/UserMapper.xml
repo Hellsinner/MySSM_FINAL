@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapper namespace="com.myssm.common.UserMapper">
+
+    <select id="findUser" paramType="com.myssm.common.User" resultType="com.myssm.common.User">
+        select * from user where emp_no = #{emp_no} AND emp_pass = #{emp_pass}
+    </select>
+    <select id="findByNo" paramType="java.lang.String" resultType="com.myssm.common.User">
+        select * from user where emp_no = #{emp_no}
+    </select>
+    <select id="findByType" paramType="java.lang.Integer" resultType="com.myssm.common.User">
+        select * from user where type = #{value}
+    </select>
+    <select id="findAll" resultType="com.myssm.common.User">
+        select * from user
+    </select>
+</mapper>
