@@ -1,0 +1,5 @@
+一个SSM后台框架模型
+
+
+实现了Spring的控制反转和依赖注入，SpringMvc的请求分发和参数绑定，Mybatis的动态代理接口
+实现了Controller、Service、AutoWired、Value、RequestMapping、ResponseBody注解
